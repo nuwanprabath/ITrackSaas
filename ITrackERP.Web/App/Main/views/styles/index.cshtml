@@ -1,0 +1,22 @@
+﻿<div ng-controller="app.views.styles.index as vm">
+    <h1>@L("Styels")</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <button ng-click="" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> @L("CreateNewStyle")</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>@L("StyleNo")</th>
+                        <th>@L("Remark")</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="style in vm.styles">
+                        <td>{{style.styleNo}}</td>
+                        <td>{{style.Remark}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

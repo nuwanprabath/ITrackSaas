@@ -29,3 +29,4 @@ D:\New folder\ITrackERP.Core\bin\Debug\System.Collections.Immutable.xml
 D:\New folder\ITrackERP.Core\obj\Debug\ITrackERP.Core.dll
 D:\New folder\ITrackERP.Core\obj\Debug\ITrackERP.Core.pdb
 D:\New folder\ITrackERP.Core\obj\Debug\ITrackERP.Core.csprojResolveAssemblyReference.cache
+C:\Users\chanaka.c\Source\Repos\ITrackSaas2\ITrackERP.Core\bin\Debug\Abp.pdb

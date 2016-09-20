@@ -38,17 +38,32 @@
                 $urlRouterProvider.otherwise('/tenants');
             }
 
+            if (abp.auth.hasPermission('Pages.Styles')) {
+                $stateProvider
+                    .state('styles', {
+                        url: '/styles',
+                        templateUrl: '/App/Main/views/styles/index.cshtml',
+                        menu: 'Styles' //Matches to name of 'Tenants' menu in ITrackERPNavigationProvider
+                    });
+                $urlRouterProvider.otherwise('/styles');
+            }
+
             $stateProvider
                 .state('home', {
                     url: '/',
                     templateUrl: '/App/Main/views/home/home.cshtml',
                     menu: 'Home' //Matches to name of 'Home' menu in ITrackERPNavigationProvider
                 })
-                .state('about', {
-                    url: '/about',
-                    templateUrl: '/App/Main/views/about/about.cshtml',
-                    menu: 'About' //Matches to name of 'About' menu in ITrackERPNavigationProvider
+
+
+                .state('styles', {
+                    url: '/styles',
+                    templateUrl: '/App/Main/views/styles/index.cshtml',
+                    menu: 'Style' //Matches to name of 'About' menu in ITrackERPNavigationProvider
                 });
+
+
+
         }
     ]);
 })();
