@@ -1,0 +1,14 @@
+﻿<div id="StyleDetail" ng-controller="app.views.styles.detail as vm">
+    <h2>{{vm.style.styleNo}} Details </h2>
+    <hr />
+    <span class="registrar-name">Style No :{{vm.style.styleNo}} </span><br/>
+    <span class="registrar-name">Article No :{{vm.style.articleNo}} </span><br />
+    <span class="registrar-name">BOC No :{{vm.style.bocNo}} </span><br />
+    <div class="event-actions">
+        <a class="btn btn-sm btn-default" ng-click="vm.backToEventsPage()"><i class="fa fa-arrow-circle-left"></i> back to style</a>
+
+    </div>
+    <p>{{vm.style.article}}</p>
+    <hr />
+   
+</div>

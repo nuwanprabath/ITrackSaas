@@ -53,5 +53,19 @@
     <text name="Yes" value="Yes" />
     <text name="No" value="No" />
     <text name="Optional" value="Optional" />
+    
+    <text name="Styles" value="Styles" />
+    <text name="StyleNo" value="Style No" />
+    <text name="OrderType" value="Order Type" />
+    <text name="ArticleNo" value="Article No" />
+    <text name="Season" value="Season" />
+    <text name="BocNo" value="Boc No" />
+    <text name="ItemType" value="Item Type" />
+    <text name="Remark" value="Remark" />
+    <text name="Action" value="Action" />
+    <text name="CreateNewStyle" value="Create New Style" />
+
+    
+
   </texts>
 </localizationDictionary>

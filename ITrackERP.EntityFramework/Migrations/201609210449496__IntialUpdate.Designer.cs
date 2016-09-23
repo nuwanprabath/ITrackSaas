@@ -7,13 +7,13 @@ namespace ITrackERP.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class _init_my : IMigrationMetadata
+    public sealed partial class _IntialUpdate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_init_my));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(_IntialUpdate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609200732033__init_my"; }
+            get { return "201609210449496__IntialUpdate"; }
         }
         
         string IMigrationMetadata.Source

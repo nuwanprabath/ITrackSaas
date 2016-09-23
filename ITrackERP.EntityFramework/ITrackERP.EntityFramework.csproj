@@ -124,9 +124,9 @@
     <Compile Include="Migrations\201506210746108_AbpZero_Initial.Designer.cs">
       <DependentUpon>201506210746108_AbpZero_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609200732033__init_my.cs" />
-    <Compile Include="Migrations\201609200732033__init_my.Designer.cs">
-      <DependentUpon>201609200732033__init_my.cs</DependentUpon>
+    <Compile Include="Migrations\201609210449496__IntialUpdate.cs" />
+    <Compile Include="Migrations\201609210449496__IntialUpdate.Designer.cs">
+      <DependentUpon>201609210449496__IntialUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ITrackERPDataModule.cs" />
@@ -153,8 +153,8 @@
     <EmbeddedResource Include="Migrations\201506210746108_AbpZero_Initial.resx">
       <DependentUpon>201506210746108_AbpZero_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609200732033__init_my.resx">
-      <DependentUpon>201609200732033__init_my.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609210449496__IntialUpdate.resx">
+      <DependentUpon>201609210449496__IntialUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

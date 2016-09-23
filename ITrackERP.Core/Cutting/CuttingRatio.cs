@@ -36,11 +36,7 @@ namespace ITRACK.Cutting
 
         public virtual string Remark { get; set; }
 
-        [ForeignKey("StyleId")]
-        public virtual Style Style { get; set; }
-
-        public virtual int StyleId { get; set; }
-
+        
 
 
 

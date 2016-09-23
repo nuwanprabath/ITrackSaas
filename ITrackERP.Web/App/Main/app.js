@@ -55,6 +55,11 @@
                     menu: 'Home' //Matches to name of 'Home' menu in ITrackERPNavigationProvider
                 })
 
+                  .state('styleDetail', {
+                      url: '/styles/:id',
+                      templateUrl: '/App/Main/views/styles/detail.cshtml',
+                      menu: 'Events' //Matches to name of 'Events' menu in ITRACKNavigationProvider
+                  })
 
                 .state('styles', {
                     url: '/styles',

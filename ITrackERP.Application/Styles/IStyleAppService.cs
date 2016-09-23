@@ -11,6 +11,8 @@ namespace ITrackERP.Styles
 {
    public interface IStyleAppService : IApplicationService
     {
-        ListResultOutput<StyleList> GetStyles();
+        ListResultOutput<StyleListDto> GetStyles();
+
+       StyleDetailOutput GetDetail(EntityRequestInput<Guid> input);
     }
 }

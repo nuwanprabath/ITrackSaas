@@ -8,6 +8,10 @@ using ITrackERP.Styles.Dto;
 using Abp.Domain.Repositories;
 using ITRACK.Company;
 using Abp.AutoMapper;
+using Abp.Linq.Extensions;
+using Abp.UI;
+
+
 
 namespace ITrackERP.Styles
 {
@@ -23,11 +27,31 @@ namespace ITrackERP.Styles
         }
 
 
-        public ListResultOutput<StyleList> GetStyles()
+        public ListResultOutput<StyleListDto> GetStyles()
         {
             var styles = _styleRepository.GetAll().ToList();
 
-            return new ListResultOutput<StyleList>(styles.MapTo<List<StyleList>>());
+            return new ListResultOutput<StyleListDto>(styles.MapTo<List<StyleListDto>>());
         }
+
+        public StyleDetailOutput GetDetail(EntityRequestInput<Guid> input)
+        {
+            var @style =  _styleRepository
+                .GetAll()
+               
+                .Where(e => e.Id == input.Id)
+                
+                .ToList().FirstOrDefault();
+
+            if (@style == null)
+            {
+                throw new UserFriendlyException("Could not found the event, maybe it's deleted.");
+            }
+            return  @style.MapTo<StyleDetailOutput>();
+
+        }
+
+
+
     }
 }

@@ -38,6 +38,14 @@ namespace ITrackERP.Web
                         icon: "fa fa-users",
                         requiredPermissionName: PermissionNames.Pages_Users
                         )
+                 ).AddItem(
+                    new MenuItemDefinition(
+                        "Styles",
+                        new LocalizableString("Styles", ITrackERPConsts.LocalizationSourceName),
+                        url: "#/styles",
+                        icon: "fa fa-info",
+                        requiredPermissionName: PermissionNames.Pages_Users
+                        )
                 ).AddItem(
                     new MenuItemDefinition(
                         "About",

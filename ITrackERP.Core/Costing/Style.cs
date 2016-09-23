@@ -18,8 +18,6 @@ namespace ITRACK.Company
 
         [Key]
 
-        public virtual int StyleId { get; set; }
-
         [Required]
         [StringLength(MaxTitleLength)]
         public virtual string StyleNo { get; protected set; }

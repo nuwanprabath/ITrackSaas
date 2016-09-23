@@ -1,5 +1,5 @@
 ﻿<div ng-controller="app.views.styles.index as vm">
-    <h1>@L("Styels")</h1>
+    <h1>@L("Styles")</h1>
     <div class="row">
         <div class="col-md-12">
             <button ng-click="" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> @L("CreateNewStyle")</button>
@@ -7,13 +7,38 @@
                 <thead>
                     <tr>
                         <th>@L("StyleNo")</th>
+                        <th>@L("OrderType")</th>
+                        <th>@L("ArticleNo")</th>
+                        <th>@L("Season")</th>
+                        <th>@L("BocNo")</th>
+                        <th>@L("ItemType")</th>
                         <th>@L("Remark")</th>
+                        <th>@L("Action")</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="style in vm.styles">
                         <td>{{style.styleNo}}</td>
-                        <td>{{style.Remark}}</td>
+                        <td>{{style.orderType}}</td>
+                        <td>{{style.articleNo}}</td>
+                        <td>{{style.bocNo}}</td>
+                        <td>{{style.season}}</td>
+                        <td>{{style.itemType}}</td>
+                        <td>{{style.remark}}</td>
+                        <td>
+                        <div class="btn-group" uib-dropdown is-open="status.isopen">
+    <button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+       
+        <li role="menuitem"> <a class="btn btn-sm btn-info" ng-href="#/styles/{{style.id}}" >Details <i class="fa fa-arrow-circle-right"></i></a> </li>
+<li role="menuitem"><a href="#">Delete</a></li>
+        <li role="menuitem"><a href="#">Details</a></li>
+        
+    </ul>
+</div>
+                        </td>
                     </tr>
                 </tbody>
             </table>

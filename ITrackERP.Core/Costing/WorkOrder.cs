@@ -38,12 +38,6 @@ namespace ITRACK.Costing
 
         public virtual string Remark { get; set; }
 
-
-        [ForeignKey("StyleId")]
-
-        public virtual Style Style { get; set; }
-        public virtual int StyleId { get; set; }
-
         
 
         public virtual ICollection<WorkOrderRatio> WorkOrderRatios { get; set; }
